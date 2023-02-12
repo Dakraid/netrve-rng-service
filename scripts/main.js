@@ -10,7 +10,7 @@ function getCryptoRandom() {
     return new DataView(buffer).getFloat64(0, true) - 1;
 }
 
-// Generates random number with fudge factor based on the current settings
+// Make call against our web API and return the float 0f..1f
 async function getRandom() {
     const response = await fetch(Settings.getUri());
     const result = parseFloat(await response.text());
@@ -35,7 +35,5 @@ Hooks.once("ready", () => {
     }
 
     // Freeze the Dice class for players to avoid modification (harder to cheat)
-    if (!game.user.isGM) {
-        Object.freeze(CONFIG.Dice);
-    }
+    Object.freeze(CONFIG.Dice);
 });
