@@ -11,17 +11,16 @@ function getCryptoRandom() {
 }
 
 // Make call against our web API and return the float 0f..1f
-async function getRandom() {
-    const response = await fetch(Settings.getUri());
-    const result = parseFloat(await response.text());
+function getRandom() {
+    const request = new XMLHttpRequest();
+    request.open("GET", Settings.getUri(), false);
+    request.send(null);
 
-    console.log(result);
-
-    if (response.status !== 200) {
-        return 1;
+    if (request.status !== 200) {
+        return getCryptoRandom();
     }
 
-    return result;
+    return parseFloat(request.responseText);
 }
 
 Hooks.once("init", () => {
