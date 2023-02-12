@@ -14,5 +14,5 @@ Unlike Dice RNG Protector, which this repo is based on, this module moves the fu
 
 ### 0.0.1
 
-- Forked from Dice RNG Protector
-- First implementation
+-   Forked from Dice RNG Protector
+-   First implementation

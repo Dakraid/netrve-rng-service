@@ -1,14 +1,14 @@
 {
-  "nrs": {
-    "settings": {
-      "usecrypto": {
-        "name": "Use RNG Service",
-        "hint": "Use a custom API endpoint to roll randomness."
-      },
-      "uri": {
-        "name": "RNG Service URI",
-        "hint": "The URI for the API endpoint."
-      }
+    "nrs": {
+        "settings": {
+            "usecrypto": {
+                "name": "Use RNG Service",
+                "hint": "Use a custom API endpoint to roll randomness."
+            },
+            "uri": {
+                "name": "RNG Service URI",
+                "hint": "The URI for the API endpoint."
+            }
+        }
     }
-  }
 }
