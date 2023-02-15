@@ -28,6 +28,6 @@
         }
     ],
     "url": "https://github.com/Dakraid/foundryvtt-rng-service",
-    "download": "https://github.com/Dakraid/foundryvtt-rng-service/releases/download/latest/netrve-rng-service.zip",
+    "download": "https://github.com/Dakraid/foundryvtt-rng-service/releases/download/0.0.1/module.zip",
     "manifest": "https://github.com/Dakraid/foundryvtt-rng-service/releases/download/latest/module.json"
 }
