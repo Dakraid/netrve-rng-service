@@ -2,12 +2,13 @@
     "id": "netrve-rng-service",
     "title": "Netrve's RNG Service",
     "description": "Changes the RNG functions calls to use an API endpoint instead of the client. Based on JDR Ninja's and NotoriusNeo's Dice RNG Protector.",
-    "version": "0.0.1",
-    "compatibility": {
-        "minimum": 8,
-        "verified": 10.288,
-        "maximum": 10
-    },
+	"version": "#{VERSION}#",
+	"manifestPlusVersion": "1.2.0",
+	"compatibility": {
+		"minimum": 10,
+		"verified": 10,
+		"maximum": 11
+	},
     "authors": [
         {
             "name": "JDR Ninja"
@@ -19,7 +20,9 @@
             "name": "Netrve"
         }
     ],
-    "esmodules": ["/scripts/main.js"],
+    "esmodules": [
+		"scripts/main.js"
+	],
     "languages": [
         {
             "lang": "en",
@@ -27,7 +30,9 @@
             "path": "languages/en.json"
         }
     ],
-    "url": "https://github.com/Dakraid/foundryvtt-rng-service",
-    "download": "https://github.com/Dakraid/foundryvtt-rng-service/releases/download/0.0.1/module.zip",
-    "manifest": "https://github.com/Dakraid/foundryvtt-rng-service/releases/download/latest/module.json"
+	"url": "#{URL}#",
+	"manifest": "#{MANIFEST}#",
+	"download": "#{DOWNLOAD}#",
+	"license": "LICENSE",
+	"readme": "README.md"
 }
