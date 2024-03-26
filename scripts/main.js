@@ -13,10 +13,10 @@ function getCryptoRandom() {
 // Make call against our web API and return the float 0f to 1f
 function getRandom() {
   const request = new XMLHttpRequest();
-  request.setRequestHeader("X-API-Key", Settings.getKey())
   const user = game.user.name
   const uri = Settings.getUri().endsWith("/") ? Settings.getUri() + user : Settings.getUri() + "/" + user;
   request.open("GET", uri, false);
+  request.setRequestHeader("Authorization", Settings.getKey())
   request.send(null);
   console.log(request.responseText)
 
