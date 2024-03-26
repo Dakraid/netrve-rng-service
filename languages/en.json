@@ -8,6 +8,10 @@
             "uri": {
                 "name": "RNG Service URI",
                 "hint": "The URI for the API endpoint."
+            },
+            "key": {
+              "name": "RNG Service API Key",
+              "hint": "The API Key for the API endpoint."
             }
         }
     }

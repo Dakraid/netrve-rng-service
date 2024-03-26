@@ -16,14 +16,28 @@ const settings = {
         type: String,
         default: "",
     },
+    key: {
+      name: "nrs.settings.key.name",
+      hint: "nrs.settings.key.hint",
+      scope: "world",
+      config: true,
+      type: String,
+      default: "",
+    },
 };
 export class Settings {
     static getUseCrypto() {
         return game.settings.get(modName, "usecrypto");
     }
+
     static getUri() {
         return game.settings.get(modName, "uri");
     }
+
+    static getKey() {
+      return game.settings.get(modName, "key");
+    }
+
     static registerSettings() {
         for (const [name, setting] of Object.entries(settings)) {
             game.settings.register(modName, name, setting);
