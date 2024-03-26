@@ -18,13 +18,14 @@ function getRandom() {
   request.open("GET", uri, false);
   request.setRequestHeader("Authorization", Settings.getKey())
   request.send(null);
-  console.log(request.responseText)
 
   if (request.status !== 200) {
     return getCryptoRandom();
   }
 
-  return parseFloat(request.responseText);
+  const json = JSON.parse(request.responseText)
+
+  return parseFloat(json.rng);
 }
 
 Hooks.once("init", () => {
