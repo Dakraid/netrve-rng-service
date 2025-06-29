@@ -3,11 +3,11 @@
   "title": "Netrve's RNG Service",
   "description": "Changes the RNG functions calls to use an API endpoint instead of the client. Based on JDR Ninja's and NotoriusNeo's Dice RNG Protector.",
   "version": "#{VERSION}#",
-  "manifestPlusVersion": "1.2.0",
+  "manifestPlusVersion": "1.3.0",
   "compatibility": {
     "minimum": 10,
-    "verified": 12,
-    "maximum": 12
+    "verified": 13,
+    "maximum": 13
   },
   "authors": [
     {
